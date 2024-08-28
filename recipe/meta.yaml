@@ -1,5 +1,5 @@
 {% set name = "rxnmapper" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rxnmapper-{{ version }}.tar.gz
-  sha256: cbe0a2ac582c83a8062a3b704c0ba6070a6bfd0fe2a2ede52c0e0fd872ee79a1
+  sha256: c702aa0da06052004e32a445819b706b4808f0d08dbf35c5eb7f213c4ecbe596
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 2
+  number: 0
 
 requirements:
   host:
@@ -25,7 +25,7 @@ requirements:
     - pandas >=1.0.3
     - rxn-chem-utils >=1.0.3
     - scipy >=1.4.1
-    - pytorch >=1.5.0,<2.1
+    - pytorch >=1.5.0,<2.5
     - transformers >=4.0.0
 
 test:
