@@ -1,5 +1,5 @@
 {% set name = "rxnmapper" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rxnmapper-{{ version }}.tar.gz
-  sha256: c702aa0da06052004e32a445819b706b4808f0d08dbf35c5eb7f213c4ecbe596
+  sha256: 2ea81c3ae2fc5a81dcd875a3af4e5e79d38ea48c9b0d7484c3eddc130d194d76
 
 build:
   noarch: python
