@@ -22,6 +22,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
+    - setuptools >=59.2.0,<82
     - pandas >=1.0.3
     - rxn-chem-utils >=1.0.3
     - scipy >=1.4.1
