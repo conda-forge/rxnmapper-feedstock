@@ -37,7 +37,9 @@ tests:
       imports:
         - rxnmapper
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}
+        - "*"
 
 about:
   summary: Reaction atom-mapping from transformers
